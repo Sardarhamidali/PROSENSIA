@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Boxes</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .box {
+            border: 2px solid red;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box.small { width: 50px; height: 50px; }
+        .box.medium { width: 100px; height: 100px; }
+        .box.large { width: 150px; height: 150px; }
+        .inner-box {
+            border: 2px solid red;
+        }
+        .box:nth-child(1) .inner-box {
+            width: 50%;
+            height: 50%;
+        }
+        .box:nth-child(2) .inner-box {
+            width: 50%;
+            height: 50%;
+        }
+        .box:nth-child(3) .inner-box {
+            width: 25%;
+            height: 25%;
+        }
+        .box:nth-child(4) .inner-box {
+            width: 50%;
+            height: 50%;
+        }
+        .box:nth-child(5) .inner-box {
+            width: 50%;
+            height: 50%;
+        }
+        .box:nth-child(6) .inner-box {
+            width: 25%;
+            height: 25%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box large">
+            <div class="inner-box"></div>
+        </div>
+        <div class="box large">
+            <div class="inner-box medium"></div>
+        </div>
+        <div class="box large">
+            <div class="inner-box small"></div>
+        </div>
+        <div class="box medium">
+            <div class="inner-box small"></div>
+        </div>
+        <div class="box medium">
+            <div class="inner-box small"></div>
+        </div>
+        <div class="box small">
+            <div class="inner-box"></div>
+        </div>
+    </div>
+</body>
+</html>
