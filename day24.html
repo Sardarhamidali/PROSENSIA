@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 360px;
+            padding: 20px;
+            text-align: center;
+        }
+        .balance {
+            font-size: 24px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .card-balance {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .manage-card {
+            background-color: #0073e6;
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .service-icon {
+            background-color: #eaeaea;
+            padding: 10px;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .service-icon img {
+            width: 100%;
+        }
+        .footer {
+            font-size: 12px;
+            color: #888;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Hi Jodi</h2>
+    <p class="balance">You have <strong>$500.00</strong> accessible from your earnings.</p>
+    <p class="card-balance">Card Balance: $54.89</p>
+    <div class="manage-card">Manage Card</div>
+    <div class="services">
+        <div class="service-icon"><img src="uber-logo.png" alt="Uber"></div>
+        <div class="service-icon"><img src="amazon-logo.png" alt="Amazon"></div>
+        <div class="service-icon"><img src="walmart-logo.png" alt="Walmart"></div>
+    </div>
+    <div class="footer">
+        Did you know? Check your card balance or transfer your earnings at any time.
+    </div>
+</div>
+
+</body>
+</html>
